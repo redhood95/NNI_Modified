@@ -10,22 +10,22 @@ from torchvision.datasets.utils import download_and_extract_archive, verify_str_
 from datasets import Cutout
 print('imports working')
 
-def download(root):
-
-
-    download_and_extract_archive(
-        "http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz",
-        root,
-        filename="101_ObjectCategories.tar.gz",
-        md5="b224c7392d521a49829488ab0f1120d9")
-    download_and_extract_archive(
-        "http://www.vision.caltech.edu/Image_Datasets/Caltech101/Annotations.tar",
-        root,
-        filename="101_Annotations.tar",
-        md5="6f83eeb1f24d99cab4eb377263132c91")
+# def download(root):
+#
+#
+#     download_and_extract_archive(
+#         "http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz",
+#         root,
+#         filename="101_ObjectCategories.tar.gz",
+#         md5="b224c7392d521a49829488ab0f1120d9")
+#     download_and_extract_archive(
+#         "http://www.vision.caltech.edu/Image_Datasets/Caltech101/Annotations.tar",
+#         root,
+#         filename="101_Annotations.tar",
+#         md5="6f83eeb1f24d99cab4eb377263132c91")
 
 # download('data')
-original_root = 'data/caltech/101_ObjectCategories/101_ObjectCategories'
+original_root = 'data/101_ObjectCategories'
 train_path = 'data/train'
 val_path = 'data/val'
 test_path = 'data/test'
